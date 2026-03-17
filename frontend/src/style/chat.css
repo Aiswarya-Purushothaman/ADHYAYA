@@ -1,0 +1,25 @@
+
+.chat {
+  position: relative;
+  overflow: hidden;
+}
+.chat::before,
+.chat::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 75%;
+  right: 75%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+.chat::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 255, 255, 0.3);
+}
+.chat::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}

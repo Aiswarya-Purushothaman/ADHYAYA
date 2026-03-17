@@ -1,0 +1,28 @@
+.edit-course-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.thumbnail-preview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.thumbnail-preview img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.section-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.video-options button {
+  margin-right: 10px;
+}

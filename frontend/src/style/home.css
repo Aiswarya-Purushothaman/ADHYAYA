@@ -1,0 +1,45 @@
+.main-content {
+  overflow: auto;
+  height: 100%; 
+}
+
+
+.main-content > * {
+  margin-bottom: 0px
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} 
+ 
+ 
+ .home {
+  position: relative;
+  
+}
+
+.home::before,
+.home::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 54.5%;
+  right: 22.3%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+
+.home::before {
+  width: 25vw;
+  height: 25vw;
+  border: 2.5vw solid rgba(255, 255, 255, 0.3);
+}
+
+.home::after {
+  width: 30vw;
+  height: 30vw;
+  border: 0.3vw solid rgba(255, 255, 255, 0.3);
+}

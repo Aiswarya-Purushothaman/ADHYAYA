@@ -1,0 +1,25 @@
+
+.email-orbit {
+  position: relative;
+  overflow: hidden;
+}
+.email-orbit::before,
+.email-orbit::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 65%;
+  right: 65%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+.email-orbit::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 255, 255, 0.3);
+}
+.email-orbit::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}

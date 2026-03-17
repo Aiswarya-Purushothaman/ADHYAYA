@@ -1,0 +1,29 @@
+.adminLogin {
+  position: relative;
+  overflow: hidden;
+}
+.adminLogin::before,
+.adminLogin::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 65%;
+  right: 85%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+.adminLogin::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 0, 0, 0.3);
+}
+.adminLogin::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+}
+/* ................................ */
+
+.custom-shadow {
+  box-shadow: 0 4px 6px rgba(216, 58, 58, 0.1), 0 10px 15px rgba(169, 15, 15, 0.05);
+}

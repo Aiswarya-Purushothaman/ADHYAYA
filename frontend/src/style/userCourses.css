@@ -1,0 +1,119 @@
+/* Add this to your CSS file */
+.bg-orbit1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-orbit1::before,
+.bg-orbit1::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 75%;
+  right: 85%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+
+.bg-orbit1::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 0, 0, 0.3);
+}
+
+.bg-orbit1::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+}
+
+.bottom-line {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+  width: 100%;
+  margin-top: 1px;
+}
+
+.orbit2::before,
+.orbit2::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 9%;
+  right: 5%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+
+.orbit2::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 0, 0, 0.3);
+}
+
+.orbit2::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+}
+
+.top-right-circle {
+  position: absolute;
+  top: 1px;
+  right: 18px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+ 
+  padding: 5px 10px;
+ border-color:solid rgba(255, 0, 0, 0.3) ;
+  margin-right: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-box i {
+  margin-right: 5px;
+  color: #333;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.category-button {
+  background-color: #a6a6a6; 
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  transition: transform 0.2s; /* Smooth transition for scaling */
+}
+
+/* Hover effect: Grow from center */
+.category-button:hover {
+  transform: scale(1.1); /* Scale up by 10% */
+  color: black; /* Change text color on hover */
+}
+
+

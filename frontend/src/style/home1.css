@@ -1,0 +1,31 @@
+
+.home-orbit {
+  position: relative;
+  overflow: hidden;
+}
+.home-orbit::before,
+.home-orbit::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  right: 90%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+.home-orbit::before {
+  width: 300px;
+  height: 300px;
+  border: 30px solid rgba(255, 0, 0, 0.3);
+}
+.home-orbit::after {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+}
+
+/* ........................ */
+
+
+
+
